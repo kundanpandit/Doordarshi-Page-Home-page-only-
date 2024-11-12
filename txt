@@ -1,0 +1,4 @@
+ <img src="varshphal.png" alt="varshphal-img" height="50px" width="50px">
+ <img src="matching.png" alt="charting-image" height="50px" width="50px">
+ <img src="yoga.png" alt="yoga-image" height="50px" width="50px">
+ <img src="yog.png" alt="matching-image" height="50px" width="50px">

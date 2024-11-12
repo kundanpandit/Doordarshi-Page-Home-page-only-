@@ -1,0 +1,506 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+
+#menu-txt{
+    color:white;
+    font-size: 17px;
+    transition: transform 1.5s ease-in-out;
+    font-weight: 500;
+  }
+  #menu-txt:hover{
+    
+    background-color: transparent;
+    border-bottom: 3px solid #ffffff;
+    /* transition: border-bottom 3s ease-in-out; */
+    
+    /* transition: transform 1.5s ease-in-out; */
+  }
+  
+  
+  .navbarr ul{
+    list-style: none;
+    margin-bottom: 0px;
+  }
+  
+  .navbarr a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    
+  }
+  
+  .sub-menuu span{
+    color: #fff;
+    list-style: none;
+  }
+  
+  .navbarr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 2;
+  }
+  
+  .navbarr, .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-right: -23px;
+  }
+  
+  #img1{
+    display: flex;
+      width:180px;
+      height:60px;
+      margin-bottom: 8px;
+      /* margin-left: 65px; */
+      /* transition: transform 1.0s ; */
+    transition: transform 1.5s ease-in-out;
+  }
+  
+  
+  #img1:hover{
+    transform: scale(1.2);
+  }
+  
+  button{
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .btnn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    background: #48CFCB;
+    padding: 0.5em 1.3em;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-right: 40px;
+    color: #fff;
+  }
+  
+  .btnn:hover{
+  
+    background: #91bbb9;
+  }
+  
+  .menuu-btn{
+    margin-left: -30px;
+    background: none;
+    display: inline-block;
+  }
+  
+  .menuu-btn span{
+    font-size: 2.3em;
+  }
+  
+  .dropdownn > div, .sub-dropdownn > div {
+    cursor: pointer;
+  
+  }
+  
+  .dropdownn .menuu a:hover{
+    background-color: transparent;
+    border-top:1px solid #48CFCB ;
+    border-bottom: 1px solid #48CFCB;
+    border-radius: 5PX;
+    
+    
+    
+  }
+  
+  /* starts here and this is for big screen */
+  
+  @media screen and (min-width: 880px) {
+    .navbarr{
+        padding: 0 1.5em;
+    }
+  
+    #menu-txt{
+      /* color:rgb(0, 0, 0); */
+      font-size: 1vw;
+      transition: transform 1.5s ease-in-out;
+    }
+    #menu-txt:hover{
+      
+      background-color: transparent;
+      border-bottom: 3px solid #ffffff;
+      /* transition: border-bottom 3s ease-in-out; */
+      
+      /* transition: transform 1.5s ease-in-out; */
+    }
+    
+    
+    
+    .navbarr a{
+      text-decoration: none;
+      font-weight: 500;
+      color: #175e5f;
+      padding: 5px;
+      font-size: 1vw;
+    }
+  
+    
+    .sub-menuu span{
+      font-size: 1.3vw;
+      color: #2b8082;
+      list-style: none;
+      font-weight: 500;
+    }
+    #sec-txt{
+      font-size: 1.3vw;
+    }
+    
+    .navbarr{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6.1vw;
+      background: transparent;
+      z-index: 2;
+      
+    }
+    
+    
+    .navbarr, .buttons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1vw;
+  
+    }
+  
+    #img1{
+        /* display: flex; */
+        padding: 0;
+        margin-left: 0;
+          width:12vw;
+          height:4vw;
+          /* margin-left: 3rem; */
+          /* transition: transform 1.0s ; */
+        transition: transform 1.5s ease-in-out;
+      }
+    .dropdownn > div{
+        padding: 3vw 1vw;
+    }
+    .mega-menuu{
+        display: flex;
+        justify-content: center;
+        margin-left: -39px;
+    }
+    .menuu-btn{
+        display: none;
+    }
+      .btnn{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1vw;
+        background: #2ab4b7;
+        /* padding: 0.5em 1.3em; */
+        border-radius: 5px;
+        margin-top: 2px;
+        /* margin-right: 40px; */
+        color: #fff;
+      }
+  
+    .menuu{
+     
+        position: absolute;
+        top: 6.1vw;
+        left:12%;
+        border-radius: 6px;
+        width: max-content;
+        font-size: 8px;
+        padding: 0 2em;
+        overflow-y:scroll;
+        transition: 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2em;
+    }
+  
+    .menuu > li:first-child{
+        /* font-size: 1.1em; */
+        /* font-weight: bold; */
+        margin: 0;
+        
+    }
+  
+    .sub-dropdownn > div span:first-child{
+        font-weight: bold;
+    }
+    
+    .dropdownn > div{
+        border-bottom: transparent;
+        transition: 0.3s;
+    }
+  
+    .dropdownn:hover > div{
+        border-color: #ffffff;
+    }
+  
+    .dropdownn li{
+        margin-bottom: 1em;
+        padding: 0.5em;
+        
+        
+    }
+  
+    .dropdownn > div span:last-child, 
+    .sub-dropdownn > div{
+        display: none;
+    }
+  
+    /* Width */
+    .menuu::-webkit-scrollbar{
+        width: 0px;
+    }
+    /* Track */
+    .menuu::-webkit-scrollbar-track{
+        
+        display: none;
+    }
+    /* Handle */
+  
+    /* Hide menu */
+    .menuu{
+        height: 0;
+    }
+    .dropdownn:hover .menuu{
+        height: max-content;
+        padding: 2em;
+        background-color: rgb(255, 255, 255); 
+        /* backdrop-filter: blur(15px); */
+        
+    }
+  }
+  
+  
+  
+  /* this for small screen */
+  
+  
+  
+  
+  @media screen and (max-width: 880px) {
+    #img1{
+     /* display: flex; */
+     padding: 0;
+     margin-left: -30px;
+       width:20vw;
+       height:7vw;
+       /* margin-left: 3rem; */
+       /* transition: transform 1.0s ; */
+     transition: transform 1.5s ease-in-out;
+   
+      
+    }
+  
+    .btnn{
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5vw;
+      background: #91bbb9;
+      border-radius: 5px;
+     margin-bottom: 3px;
+      color: #fff;
+    }
+    .navbarr{
+      position: relative;
+        padding: 1em 2.5em;
+  
+    }
+   
+    .navbarr a{
+      text-decoration: none;
+      color: #000000;
+      padding: 5px;
+      /* font-size: 1vw; */
+    }
+  
+    
+    .sub-menuu span{
+      /* font-size: 1.3vw; */
+      color: #000000;
+      list-style: none;
+    }
+    #menu-txt{
+      color:rgb(0, 0, 0);
+      /* font-size: 1.2vw; */
+      transition: transform 1.5s ease-in-out;
+    }
+  
+    .menu-containerr{
+     
+        position:absolute;
+        background: #ffffff;
+       
+        top: 4.9em;
+        left: 0;
+        width: 100%;
+        overflow-y: hidden;
+        transition: 0.3s ease-in-out;
+    }
+  
+    /* Width */
+    .mega-menuu::-webkit-scrollbar{
+        width: 0px;
+    }
+    /* Track */
+    .mega-menuu::-webkit-scrollbar-track{
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .mega-menuu::-webkit-scrollbar-thumb{
+        background: #888;
+    }
+    /* Handle on hover */
+    .mega-menuu::-webkit-scrollbar-thumb:hover{
+        background: #555;
+    }
+    .mega-menuu{
+        padding: 0 1em 1em 1em;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .mega-menuu li{
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .mega-menuu li > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .menuu li{
+        padding: 0 1em;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .menuu a{
+        display: block;
+        margin: 0.8em 0;
+    }
+    .menuu{
+        display: none;
+    }
+    /* Toggle class for Javascript */
+    .menuu-show{
+      
+        display: block;
+    }
+    .material-symbols-outlined{
+        transition: 0.3s;
+    }
+    /* Toggle class for javascript */
+    .icon-rotated{
+        transform: rotate(90deg);
+    }
+    .dropdownn>div, .sub-dropdownn > div{
+        cursor: pointer;
+        padding: 0.5em;
+    }
+    .sub-menuu{
+        font-size: 0.9em;
+        display: none;
+    }
+    /* Toggle class for Javascript */
+    .sub-menu-show{
+        display: block;
+    }
+    .dropdownn:hover>div, .sub-dropdownn:hover>div{
+        background: #dbdbdb;
+    }
+    /* Hide menu */
+    .menu-containerr{
+      
+        height: 0;
+    }
+    /* Toggle class for javascript */
+    .mega-menuu-show{
+        height: 50vh;
+    }
+  }
+
+  #tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+  #tooltip #tooltiptext {
+    visibility: hidden;
+    max-width:fit-content;
+    /* background-color: black; */
+    /* background-color: rgb(0,0,0); Fallback color */
+   background-color: rgba(0,0,0, 0.4); /*  Black w/opacity/see-through */
+   
+    color: #fff;
+    text-align: center;
+    text-wrap: nowrap;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 12px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+     /* Place it above the element */
+    top:120%;
+    right: 0%;
+    
+    /* margin-left: -70px; Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translateY(9px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #tooltip:hover #tooltiptext {
+    
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: 1;
+      transition: .3s linear;
+    animation: tooltip 1s ease-in-out infinite  alternate;
+  }
+  @keyframes tooltip {
+    0%{
+      transform: translateY(6px);	
+    }
+  
+    100%{
+      transform: translateY(1px);
+    }
+  
+  }
+  
+ /* Default Navbar Background */
+#navnav {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Apply Blur and Background Color on Scroll */
+  .nav-scrolled {
+    
+    background-color: #cbf3f0; /* Semi-transparent background */
+    /* backdrop-filter: blur(15px);  */
+    width: 100%;
+    transition: background-color 0.3s ease-in-out,
+    backdrop-filter 0.3s ease-in-out;
+  }
+   
+  
